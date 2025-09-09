@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
+                git branch: 'main', url: 'https://github.com/Amymah/gitjenkinsintegration.git'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploying the application..."
+                echo "Deploying application..."
             }
         }
     }
