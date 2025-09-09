@@ -8,21 +8,10 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Run Python Files') {
             steps {
-                echo "Building the project..."
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo "Running tests..."
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo "Deploying application..."
+                bat 'python AlertFunc.py'
+                bat 'python DatePicker.py'
             }
         }
     }
